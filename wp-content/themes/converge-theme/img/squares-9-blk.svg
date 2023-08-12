@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>60CE9409-F519-4724-A29C-6F22FB7A55C6</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1600" height="2383"></rect>
+    </defs>
+    <g id="Final-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Converge-Website-Full-Page" transform="translate(-800, -10062)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1600" height="13141"></rect>
+            <g id="sec-6-contact-us" transform="translate(0, 9664)">
+                <g id="shape/bg-diagnol-vivid-yellow">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FCFCFC" xlink:href="#path-1"></use>
+                    <polygon id="Rectangle" fill="#FFE40A" mask="url(#mask-2)" transform="translate(1165,5881, 1234,3398) rotate(-15) translate(-1165,5881, -1234,3398)" points="923.310596 -234.660153 1407.86559 6.33913957 1407.86559 2703.33985 923.310596 2703.33985"></polygon>
+                </g>
+                <g id="copy" transform="translate(201, 336)" fill="#000000">
+                    <g id="icon/squares-9-blk" transform="translate(599, 62)">
+                        <rect id="Rectangle" x="0" y="0" width="10" height="10"></rect>
+                        <rect id="Rectangle" x="20" y="0" width="10" height="10"></rect>
+                        <rect id="Rectangle" x="40" y="0" width="10" height="10"></rect>
+                        <rect id="Rectangle" x="0" y="20" width="10" height="10"></rect>
+                        <rect id="Rectangle" x="20" y="20" width="10" height="10"></rect>
+                        <rect id="Rectangle" x="40" y="20" width="10" height="10"></rect>
+                        <rect id="Rectangle" x="0" y="40" width="10" height="10"></rect>
+                        <rect id="Rectangle" x="20" y="40" width="10" height="10"></rect>
+                        <rect id="Rectangle" x="40" y="40" width="10" height="10"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -209,7 +209,7 @@ $corporate_program_link = isset($settings['corporate_program_link']) ? esc_url($
                           <span class="surname"><?php echo $surname; ?></span>
                       </div>
                   </div>
-                  <div class="synopsis-container col-9 col-lg-12">
+                  <div class="synopsis-container col-12 col-md-9 col-lg-12">
                     <div class="synopsis slidedown">
                         <?php the_content(); ?>
                     </div>

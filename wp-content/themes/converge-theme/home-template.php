@@ -6,6 +6,13 @@ Template Post Type: page
 
 get_header();
 
+$settings = get_option('theme_settings');
+$student_application_link = isset($settings['student_application_link']) ? esc_url($settings['student_application_link']) : '#';
+$corporate_program_link = isset($settings['corporate_program_link']) ? esc_url($settings['corporate_program_link']) : '#';
+
+?>
+
+<?php
 
 ?>
 <section id="intro">
@@ -46,7 +53,7 @@ get_header();
       <div class="row">
         <div class="row links">
           <div class="col-12 col-lg-6 padding-right">
-            <a href="#">
+            <a href="<?php echo $corporate_program_link; ?>">
               <div class="col-10 col-md-8">
                 <span class="sub uppercase">Corporates</span>
                 <span class="cta">Join Program</span>
@@ -57,7 +64,7 @@ get_header();
             </a>
           </div>
           <div class="col-12 col-lg-6 padding-left">
-            <a href="#">
+            <a href="<?php echo $student_application_link; ?>">
               <div class="col-10 col-md-8">
                 <span class="sub">Students</span>
                 <span class="cta">Apply now</span>
@@ -248,10 +255,10 @@ get_header();
           </div>
         </div>
         <div class="row links">
-          <a href="#">
-            <div>
-              <span class="cta">Apply now</span><img src="<?php echo esc_url( get_template_directory_uri() . '/img/arrow-right-lrg-blk-bold.png' ); ?>">
-            </div>
+          <a href="<?php echo $student_application_link; ?>">
+              <div>
+                  <span class="cta">Apply now</span><img src="<?php echo esc_url( get_template_directory_uri() . '/img/arrow-right-lrg-blk-bold.png' ); ?>">
+              </div>
           </a>
         </div>
       </div>
@@ -271,7 +278,7 @@ get_header();
           </div>
         </div>
         <div class="row links">
-          <a href="#">
+          <a href="<?php echo $corporate_program_link; ?>">
             <div>
               <span class="cta">Join the program</span><img src="<?php echo esc_url( get_template_directory_uri() . '/img/arrow-right-lrg-blk-bold.png' ); ?>">
             </div>

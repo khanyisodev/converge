@@ -10,6 +10,8 @@
  */
 
 // Retrieve the logo from the theme settings
+$settings = get_option('theme_settings');
+$logo_url = isset($settings['logo']) ? esc_attr($settings['logo']) : '';
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +38,14 @@
       <div class="desktop-header">
         <div class="row">
           <div class="logo col-4">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                  <img src="<?php echo esc_url( get_template_directory_uri() . '/img/nav-top-logo-converge.png' ); ?>" alt="Site Logo">
-              </a>
+
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <?php if ($logo_url) : ?>
+                  <img src="<?php echo esc_url($logo_url); ?>" alt="Site Logo">
+                <?php else : ?>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/nav-top-logo-converge.png' ); ?>" alt="Site Logo">
+                <?php endif; ?>
+            </a>
           </div>
           <div class="menu col-8">
             <nav class="main-menu">
@@ -55,9 +62,13 @@
       <div class="mobile-header">
         <div class="container">
           <div class="logo">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                  <img src="<?php echo esc_url( get_template_directory_uri() . '/img/nav-top-logo-converge.png' ); ?>" alt="Site Logo">
-              </a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <?php if ($logo_url) : ?>
+                  <img src="<?php echo esc_url($logo_url); ?>" alt="Site Logo">
+                <?php else : ?>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/img/nav-top-logo-converge.png' ); ?>" alt="Site Logo">
+                <?php endif; ?>
+            </a>
           </div>
         </div>
       </div>

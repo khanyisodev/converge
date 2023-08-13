@@ -150,12 +150,9 @@
 	}
 
 	#how-it-works .item .info {
-	    position: absolute;
-	}
-
-	#how-it-works .item .info {
 		left: 50px;
 		position: absolute;
+
 	}
 
 	#how-it-works .item img {

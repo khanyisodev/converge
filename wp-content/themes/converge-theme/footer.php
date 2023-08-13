@@ -1,3 +1,10 @@
+<?php
+$settings = get_option('theme_settings');
+$linkedin_url = isset($settings['linkedin_url']) ? esc_url($settings['linkedin_url']) : '#';
+$facebook_url = isset($settings['facebook_url']) ? esc_url($settings['facebook_url']) : '#';
+$instagram_url = isset($settings['instagram_url']) ? esc_url($settings['instagram_url']) : '#';
+$footer_logo_url = isset($settings['footer_logo']) ? esc_url($settings['footer_logo']) : '';
+?>
 <div class="scroll-top">
   <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/img/scroll-up.png' ); ?>"></a>
 </div>
@@ -17,9 +24,9 @@
                   <span class="email">hello@converge4billion.com</span>
                   <span class="tel">+1 650 338 9601</span>
                   <div class="socials desktop">
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="<?php echo $linkedin_url; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="<?php echo $facebook_url; ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="<?php echo $instagram_url; ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </div>
                 </div>
               </div>
@@ -56,9 +63,9 @@
               </div>
               <!-- Mobile Socials -->
               <div class="socials mobile">
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="<?php echo $linkedin_url; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="<?php echo $facebook_url; ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="<?php echo $instagram_url; ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -80,7 +87,7 @@
         </div>
       </div>
       <div class="logo">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/img/logo-white.png' ); ?>">
+        <img src="<?php echo $footer_logo_url; ?>" alt="Footer Logo">
       </div>
     </div>
   </section>

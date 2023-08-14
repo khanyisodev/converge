@@ -949,8 +949,16 @@ h5.uppercase {
 }
 .scroll-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .25s;
+}
+.scroll-top.active {
+  opacity: 1;
+  visibility: inherit;
+  bottom: 20px;
 }
 .scroll-top img {
   width: 45px;
